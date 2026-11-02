@@ -1,70 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <title>Mes Plantes - Monstrera Deliciosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Plantes - Monstera Deliciosa</title>
     <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
 
-<div id="container"></div>
-<!-- on créer un en tête -->
-        <header>
-            <a href="#" class="back-btn"><i class="fa-solid fa-arrow-left"></i></a>
-            <h1>Mes plantes 🪴</h1>
-        </header>
+<!-- rectangle de l'iPhone 16 : tout le contenu est DEDANS -->
+<div class="iphone-16-frame">
 
-<!-- Nom de la plante et emplacement -->
-        <div class="plant-title">
-            <h2>Monstrera Deliciosa</h2>
-            <p>Salon</p>
-        </div>
+    <h1>Mes plantes 🪴</h1>
 
- <!-- Image de la plante -->
-        <div class="plant-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg5fTLcVPVMhrXbXFXY5jCg-P7WdJrKGLXB7G-Y5izg&s=10" alt="Monstrera Deliciosa">
-        </div>
-
-<!-- afficher le taux d'humidité et la température -->
-        <div class="stats-container">
-            <div class="stat-card">
-                <div class="circle humidity">18%</div>
-                <span>Humidité du sol</span>
-            </div>
-            <div class="stat-card">
-                <div class="circle temperature">22°</div>
-                <span>Température</span>
-            </div>
-        </div>
-
-<!-- Alerte arrosage -->
-        <div class="water-alert">
-            Prochain arrosage : Aujourd’hui !
-        </div>
-
-<!-- Barre de navigation du bas -->
-        <nav class="bottom-nav">
-            <a href="#" class="nav-item active">
-                <i class="fa-solid fa-table-cells-large"></i>
-                <span>Accueil</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fa-solid fa-seedling"></i>
-                <span>Mes plantes</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fa-regular fa-calendar"></i>
-                <span>Calendrier</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fa-regular fa-user"></i>
-                <span>Profil</span>
-            </a>
-        </nav>
-
+    <div class="plant-title">
+        <h2>Monstera Deliciosa</h2>
+        <p>Salon</p>
     </div>
+
+    <div class="plant-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg5fTLcVPVMhrXbXFXY5jCg-P7WdJrKGLXB7G-Y5izg&s=10" alt="Monstera Deliciosa">
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="circle-humidity">18%</div>
+            <span>Humidité du sol</span>
+        </div>
+        <div class="stat-card">
+            <div class="circle-temperature">22°</div>
+            <span>Température</span>
+        </div>
+    </div>
+
+    <div class="water-alert">
+        <p style="color: #d32e15;">Prochain arrosage : Aujourd’hui !</p>
+    </div>
+
+    <div class="nav-bar">
+        <div class="nav-item">Accueil</div>
+        <div class="nav-item">Plantes</div>
+        <div class="nav-item">Agenda</div>
+        <div class="nav-item">Profil</div>
+    </div>
+
+</div> <!-- fin du cadre iPhone -->
 
 </body>
 </html>

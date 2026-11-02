@@ -1,0 +1,137 @@
+body {
+    background-color: #d0d1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.iphone-16-frame {
+    /* Dimensions de l'iPhone 16 */
+    width: 370px;
+    height: 700px;
+
+    /* Style du rectangle */
+    background-color: #ffffff;
+    border: 4px; 
+    border-radius: 20px;      /* Arrondir les coins */
+
+    position: relative;       /* la nav-bar se place par rapport au cadre */
+    overflow: hidden;
+
+    padding: 20px 20px 90px;  /* 90px en bas pour ne pas passer sous la nav-bar */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* titre */
+h1 {
+    font-size: 24px;
+    margin-bottom: 22px;
+    margin-top: 50;
+}
+
+/* nom de la plante et emplacement */
+.plant-title h2 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.plant-title p {
+    color: #777;
+    margin-top: 2px;
+}
+
+/* image de la plante */
+.plant-image {
+    width: 50%;
+    max-width: 150px;
+    margin: 0 auto 15px auto; /* on centre l'image horizontalement */
+    margin-bottom: 28px;
+    margin-top: 30px;
+}
+.plant-image img {
+    width: 100%;              /* l'image prend la largeur de sa div */
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+
+/* conteneur des deux cercles, côte à côte */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+}
+
+/* on créer les cercles pour mettre l'humidité et la température */
+.circle-humidity,
+.circle-temperature {
+    width: 50px;
+    height: 50px;
+    background-color: #DBE7DA; /* fond vert d'eau dans le cercle */
+    border-radius: 50%;        /* rendre le carré rond */
+    font-weight: bold;
+
+    /* centrer le texte à l'intérieur du rond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* alerte arrosage */
+.water-alert p {
+    font-weight: bold;
+    margin: 10px 0;
+     margin-top: 80px
+}
+
+/* Le conteneur global de la barre de navigation */
+.nav-bar {
+    position: absolute;       /* Fixe la barre par rapport au cadre de l'iPhone */
+    bottom: 0;                /* La colle tout en bas du rectangle */
+    left: 0;
+    width: 100%;              /* Prend toute la largeur du téléphone */
+    height: 70px;             /* Hauteur de la barre */
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0; /* Fine ligne de séparation en haut */
+
+    /* Flexbox pour aligner les 4 carrés côte à côte */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Style de chaque carré (pour chaque icône/lien) */
+.nav-item {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f4f1;
+    border-radius: 12px;
+
+    /* Centre le texte à l'intérieur du carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 11px;
+    color: #2c662d;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #DBE7DA;
+}
