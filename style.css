@@ -9,14 +9,14 @@ body {
 }
 
 .iphone-16-frame {
-    /* Dimensions de l'iPhone 16 */
+    /* dimensions de l'iPhone */
     width: 370px;
     height: 750px;
 
     /* style du rectangle */
     background-color: #ffffff;
     border: 4px; 
-    border-radius: 20px; /* Arrondir les coins */
+    border-radius: 20px; /* on arrondit les coins */
 
     position: relative; /* la nav-bar se place par rapport au cadre */
     overflow: hidden;
@@ -30,7 +30,7 @@ body {
 h1 {
     font-size: 30px;
     margin-bottom: 22px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /* nom de la plante "monstrera deliciosa" et emplacement */
@@ -43,14 +43,27 @@ h1 {
     font-size: 13px;
     color: #777;
 }
+ 
+/*flèche*/
+.back-arrow {
+    width: 100%;           /* ça prend toute la largeur pour pouvoir s'aligner à gauche */
+    text-align: left;      /* ça place la flèche à gauche */
+    color: #3b5a2b;      /* on définit la couleur */
+    font-size: 32px;       /* on définit taille de la flèche */
+    font-weight: bold;     /* épaisseur du trait */
+    line-height: 1;
+    padding-left: 15px;    /* on décale un peu la flèche du bord gauche */
+    margin-top: 10px;         /* on décale un peu la flèche du haut */        
+    cursor: pointer;       /* ça change le curseur en main au survol */
+}
 
 /* image de la plante */
 .plant-image {
     width: 70%;
     max-width: 220px;
     margin: 0 auto 15px auto; /* on centre l'image horizontalement */
-    margin-bottom: 28px;
-    margin-top: 60px;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 .plant-image img {
     width: 100%;  /* l'image prend la largeur de sa div */
@@ -76,16 +89,16 @@ h1 {
     font-size: 13px;
 }
 
-/* on créer les cercles pour mettre l'humidité et la température */
-.circle-humidity,
-.circle-temperature {
+/* on créer les cercles pour afficher l'humidité et la température */
+#humidity,
+#temperature {
     width: 50px;
     height: 50px;
     background-color: #DBE7DA; /* fond vert d'eau dans le cercle */
-    border-radius: 50%;        /* rendre le carré rond */
+    border-radius: 50%;          /* on arrondit les coins du carré */
     font-weight: bold;
 
-    /* centrer le texte à l'intérieur du rond */
+    /* on centre le texte à l'intérieur du rond */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,35 +108,37 @@ h1 {
 .water-alert p {
     font-weight: bold;
     margin: 10px 0;
-     margin-top: 40px
+    margin-top: 40px
 }
 
-/* Le conteneur global de la barre de navigation */
+/* le conteneur de la barre de navigation */
 .nav-bar {
-    position: absolute;       /* Fixe la barre par rapport au cadre de l'iPhone */
-    bottom: 0;                /* La colle tout en bas du rectangle */
+    position: absolute;       /* on fixe la barre par rapport au cadre de l'iPhone */
+    bottom: 0;                /* pn la fixe tout en bas du rectangle */
     left: 0;
-    width: 100%;              /* Prend toute la largeur du téléphone */
-    height: 70px;             /* Hauteur de la barre */
-    background-color: #ffffff;
+    width: 100%;              /* ça prend toute la largeur du téléphone */
+    height: 70px;  
+    background-color: #DBE7DA;
     border-top: 1px solid #e0e0e0; /* Fine ligne de séparation en haut */
 
-    /* Flexbox pour aligner les 4 carrés côte à côte */
+    /* on créer une flexbox pour aligner les 4 carrés côte à côte */
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
 }
 
-/* Style de chaque carré (pour chaque icône/lien) */
+/* style de chaque carré */
 .nav-item {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: #f0f4f1;
-    border-radius: 12px;
+    border-radius: 12px; /* on arrondit les coins du carré */
+    gap: 4px; /* espace entre le carré et le texte en dessous */
 
-    /* Centre le texte à l'intérieur du carré */
+    /* on centre le texte à l'intérieur du carré */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -133,6 +148,12 @@ h1 {
     transition: background-color 0.2s;
 }
 
+/* style du texte en dessous de l'icône */
+.nav-item p {
+    margin: 0;     /* ça supprime la marge par défaut du <p> */
+    font-size: 11px;
+    text-align: center;
+}
 .nav-item:hover {
     background-color: #DBE7DA;
 }

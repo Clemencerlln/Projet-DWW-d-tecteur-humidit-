@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Plantes - Monstera Deliciosa</title>
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/methio/adafruitIO-class@latest/index.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<!-- rectangle de l'iPhone 16 : tout le contenu est DEDANS -->
+<!-- rectangle de l'iPhone 16 et tout le contenu est dedans -->
 <div class="iphone-16-frame">
 
-    <h1>Mes plantes 🪴</h1>
-
-<!-- on mmet un flèche à l'envert-->    
+<!-- on met une flèche à l'envert-->    
     <div class="back-arrow">←</div>
+    
+    <h1>Mes plantes 🪴</h1>
 
     <div class="plant-title">
         <h2>Monstera Deliciosa</h2>
         <p>Salon</p>
     </div>
 
+<!-- on importe l'image de la plante -->    
     <div class="plant-image">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg5fTLcVPVMhrXbXFXY5jCg-P7WdJrKGLXB7G-Y5izg&s=10" alt="Monstera Deliciosa">
     </div>
 
     <div class="stats-container">
         <div class="stat-card">
-            <div class="circle-humidity">18%</div>
+            <div id="humidity">18%</div>
             <span>Humidité du sol</span>
         </div>
         <div class="stat-card">
-            <div class="circle-temperature">22°</div>
+            <div id="temperature">22°</div>
             <span>Température</span>
         </div>
     </div>
@@ -40,14 +43,20 @@
         <p style="color: #d32e15;">Prochain arrosage : Aujourd’hui !</p>
     </div>
 
+    <!-- barre de navigation-->
     <div class="nav-bar">
-        <div class="nav-item">Accueil</div>
-        <div class="nav-item">Mes plantes</div>
-        <div class="nav-item">Calendrier</div>
-        <div class="nav-item">Profil</div>
+        <div class="nav-item"><i data-lucide="layout-dashboard"></i><p>Accueil</p></div>
+        <div class="nav-item"><i data-lucide="plant-pot"></i><p>Mes plantes</p></div>
+        <div class="nav-item"><i data-lucide="calendar-days"></i><p>Calendrier</p></div>
+        <div class="nav-item"><i data-lucide="circle-user-round"></i><p>Profil</p></div>
     </div>
 
 </div> <!-- fin du cadre iPhone -->
+
+ <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 
 </body>
 </html>
