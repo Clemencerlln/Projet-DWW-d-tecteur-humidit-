@@ -11,14 +11,14 @@ body {
 .iphone-16-frame {
     /* Dimensions de l'iPhone 16 */
     width: 370px;
-    height: 700px;
+    height: 750px;
 
-    /* Style du rectangle */
+    /* style du rectangle */
     background-color: #ffffff;
     border: 4px; 
-    border-radius: 20px;      /* Arrondir les coins */
+    border-radius: 20px; /* Arrondir les coins */
 
-    position: relative;       /* la nav-bar se place par rapport au cadre */
+    position: relative; /* la nav-bar se place par rapport au cadre */
     overflow: hidden;
 
     padding: 20px 20px 90px;  /* 90px en bas pour ne pas passer sous la nav-bar */
@@ -26,34 +26,34 @@ body {
     text-align: center;
 }
 
-/* titre */
+/* titre "mes plantes"*/
 h1 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 22px;
-    margin-top: 50;
+    margin-top: 50px;
 }
 
-/* nom de la plante et emplacement */
+/* nom de la plante "monstrera deliciosa" et emplacement */
 .plant-title h2 {
-    font-size: 20px;
-    margin: 20px;
+    font-size: 17px;
+    margin: 15px;
 }
 
 .plant-title p {
+    font-size: 13px;
     color: #777;
-    margin-top: 2px;
 }
 
 /* image de la plante */
 .plant-image {
-    width: 50%;
-    max-width: 150px;
+    width: 70%;
+    max-width: 220px;
     margin: 0 auto 15px auto; /* on centre l'image horizontalement */
     margin-bottom: 28px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .plant-image img {
-    width: 100%;              /* l'image prend la largeur de sa div */
+    width: 100%;  /* l'image prend la largeur de sa div */
     height: auto;
     border-radius: 20px;
     display: block;
@@ -65,6 +65,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin: 15px 0;
+    margin-top: 30px;
 }
 
 .stat-card {
@@ -94,7 +95,7 @@ h1 {
 .water-alert p {
     font-weight: bold;
     margin: 10px 0;
-     margin-top: 80px
+     margin-top: 40px
 }
 
 /* Le conteneur global de la barre de navigation */
