@@ -1,5 +1,5 @@
-let username = "Clemencerlln";
-let activeKey = "aio_XlWC36lqfVYpL8zvZZ89fTq7RS7t";
+let username = "XXXXX";
+let activeKey = "XXXXX";
 
 const IO = new AdafruitIO(username, activeKey);
 
